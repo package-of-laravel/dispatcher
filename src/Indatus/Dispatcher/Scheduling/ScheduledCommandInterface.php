@@ -1,9 +1,10 @@
-<?php namespace Indatus\Dispatcher\Scheduling;
+<?php
+
+namespace Indatus\Dispatcher\Scheduling;
 
 /**
  * @author Ben Kuhl <bkuhl@indatus.com>
  */
-
 use Indatus\Dispatcher\Scheduler;
 
 interface ScheduledCommandInterface

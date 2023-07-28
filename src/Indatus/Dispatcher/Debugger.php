@@ -1,4 +1,6 @@
-<?php namespace Indatus\Dispatcher;
+<?php
+
+namespace Indatus\Dispatcher;
 
 use Indatus\Dispatcher\Scheduling\ScheduledCommandInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -7,7 +9,6 @@ use Symfony\Component\Console\Output\OutputInterface;
  * @copyright   2014 Indatus
  * @package Indatus\Dispatcher
  */
-
 class Debugger
 {
     /** @var \Symfony\Component\Console\Output\OutputInterface */

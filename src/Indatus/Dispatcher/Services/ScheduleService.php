@@ -1,4 +1,6 @@
-<?php namespace Indatus\Dispatcher\Services;
+<?php
+
+namespace Indatus\Dispatcher\Services;
 
 /**
  * This file is part of Dispatcher
@@ -8,14 +10,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 use App;
 use Artisan;
 use Indatus\Dispatcher\Debugger;
 use Indatus\Dispatcher\Scheduling\Schedulable;
 use Indatus\Dispatcher\Scheduling\ScheduledCommandInterface;
-use Indatus\Dispatcher\Scheduling\ScheduleException;
-use Indatus\Dispatcher\Table;
 use Symfony\Component\Process\Exception\InvalidArgumentException;
 
 abstract class ScheduleService

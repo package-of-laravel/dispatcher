@@ -1,4 +1,6 @@
-<?php namespace Indatus\Dispatcher\Services;
+<?php
+
+namespace Indatus\Dispatcher\Services;
 
 /**
  * This file is part of Dispatcher
@@ -8,13 +10,8 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 use App;
-use Illuminate\Console\Command;
-use Indatus\Dispatcher\Commands\Run;
 use Indatus\Dispatcher\Debugger;
-use Indatus\Dispatcher\OptionReader;
-use Indatus\Dispatcher\Scheduling\ScheduledCommand;
 use Indatus\Dispatcher\Scheduling\ScheduledCommandInterface;
 use Config;
 

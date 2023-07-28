@@ -1,10 +1,11 @@
-<?php namespace Indatus\Dispatcher;
+<?php
+
+namespace Indatus\Dispatcher;
 
 /**
  * @copyright   2014 Indatus
  * @package Indatus\Dispatcher
  */
-
 class OptionReader
 {
     /** @var array */

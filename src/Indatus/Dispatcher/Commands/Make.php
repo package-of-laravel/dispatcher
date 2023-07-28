@@ -1,4 +1,6 @@
-<?php namespace Indatus\Dispatcher\Commands;
+<?php
+
+namespace Indatus\Dispatcher\Commands;
 
 /**
  * This file is part of Dispatcher
@@ -8,9 +10,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 use Config;
-use Illuminate\Console\Command;
 use Illuminate\Foundation\Console\CommandMakeCommand;
 
 /**

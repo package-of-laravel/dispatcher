@@ -1,4 +1,6 @@
-<?php namespace Indatus\Dispatcher;
+<?php
+
+namespace Indatus\Dispatcher;
 
 /**
  * This file is part of Dispatcher
@@ -10,7 +12,6 @@
  */
 
 use App;
-use Config;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {

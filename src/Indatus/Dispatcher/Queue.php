@@ -1,4 +1,6 @@
-<?php namespace Indatus\Dispatcher;
+<?php
+
+namespace Indatus\Dispatcher;
 
 /**
  * This file is part of Dispatcher
@@ -8,7 +10,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 class Queue
 {
     /** @var QueueItem[] */

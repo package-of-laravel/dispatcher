@@ -1,4 +1,6 @@
-<?php namespace Indatus\Dispatcher\Commands;
+<?php
+
+namespace Indatus\Dispatcher\Commands;
 
 /**
  * This file is part of Dispatcher
@@ -8,7 +10,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 use Illuminate\Console\Command;
 use Indatus\Dispatcher\Services\CommandService;
 use Symfony\Component\Console\Input\InputOption;
