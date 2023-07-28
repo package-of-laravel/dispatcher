@@ -1,5 +1,5 @@
 {
-    "name": "indatus/dispatcher",
+    "name": "package-of-laravel/dispatcher",
     "description": "Schedule your artisan commands within your application",
     "keywords": ["laravel", "artisan", "dispatcher", "schedule"],
     "type": "library",
@@ -9,6 +9,11 @@
             "name": "Ben Kuhl",
             "email": "bkuhl@indatus.com",
             "role": "Developer"
+        },
+        {
+            "name": "Pralhad Kumar Shrestha",
+            "email": "pralhad.shrestha05@gmail.com",
+            "role": "Package Maintainer"
         }
     ],
     "require": {
