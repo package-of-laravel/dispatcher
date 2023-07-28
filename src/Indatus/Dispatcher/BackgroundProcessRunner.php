@@ -1,4 +1,6 @@
-<?php namespace Indatus\Dispatcher;
+<?php
+
+namespace Indatus\Dispatcher;
 
 /**
  * This file is part of Dispatcher
@@ -8,16 +10,13 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
-use App;
-use Indatus\Dispatcher\Scheduling\ScheduledCommand;
 use Indatus\Dispatcher\Scheduling\ScheduledCommandInterface;
 use Indatus\Dispatcher\Services\CommandService;
+use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Process;
 
 class BackgroundProcessRunner
 {
-
     /**
      * @var \Indatus\Dispatcher\Services\CommandService
      */
@@ -48,7 +47,16 @@ class BackgroundProcessRunner
             $debugger->commandRun($scheduledCommand, $runCommand);
         }
 
-        exec($runCommand);
+        if(function_exists('exec')) {
+            exec($runCommand);
+        } else {
+            $process = new Process($runCommand);
+            $process->run();
+            // executes after the command finishes
+            if (!$process->isSuccessful()) {
+                throw new ProcessFailedException($process);
+            }
+        }
 
         return true;
     }

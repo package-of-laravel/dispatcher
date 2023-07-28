@@ -1,4 +1,6 @@
-<?php return array(
+<?php
+
+return array(
     /**
      * The schedule driver to use:
      *
